@@ -131,16 +131,16 @@ body{
 .user-list{
   display: flex;
   flex-flow: wrap;
+  align-items: flex-start;
 }
 
 .user-card{
   border: solid 1px white;
   border-radius: 5px;
-  height: 150px;
-  width: 300px;
+  width: 400px;
   position: relative;
   background-color: rebeccapurple;
-  color: white;
+  color: #FFCC00;
   font-family: "lucida sans unicode";
   padding: 10px;
   margin: 5px;
@@ -148,7 +148,7 @@ body{
   backface-visibility: hidden;
 }
 
-.user-card:hover{
+/*.user-card:hover{
   opacity: 0.3;
 }
 
@@ -166,12 +166,32 @@ body{
   -ms-transform: translate(-50%, -50%);
   text-align: center;
   cursor: pointer;
-}
+}*/
 
 .user-input input{
   margin: 0 5px 0 5px;
 }
 
-.user-card-title{
-  display: flex;
+.user-card-body{
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 5px;
+  height: 100px;
+  border-color: #FFCC00;
+}
+
+.user-card-footer{
+  text-align: right;
+  margin-top: 5px;
+}
+
+.button-card{
+  background: transparent;
+  border-color: #FFCC00;
+  color: #FFCC00;
+  border: 1px solid;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
 }

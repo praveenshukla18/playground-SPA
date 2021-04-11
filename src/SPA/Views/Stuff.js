@@ -35,16 +35,14 @@ class Stuff extends React.Component{
                 Accept: 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                name: this.state.name
-            })
+            body: JSON.stringify({})
         }).then(() => this.fetchUsers());
     }
 
     renderUsers = () => {
         return this.state.users.map(user => {
             return (
-                <UserCard name={user}/>
+                <UserCard user={user}/>
             );
         });
     }
@@ -52,10 +50,6 @@ class Stuff extends React.Component{
     render(){
         return(
             <div>
-                <div className='user-input'>
-                    <input type='text' onChange={this.nameChanged} placeholder='Name'/>
-                    <button onClick={this.saveUser}>Save user</button>
-                </div>
                 <div className='user-list'>
                     {this.renderUsers()}
                 </div>
