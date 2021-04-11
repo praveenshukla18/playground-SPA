@@ -10,7 +10,7 @@ class UserCard extends React.Component {
         return (
             <div className='user-card'>
                 <div className='user-card-title'>
-                    {this.props.name}
+                    {`${this.props.firstName} ${this.props.lastName}`} 
                 </div>
                 <div className='message-btn'>
                     Message
