@@ -44,7 +44,7 @@ class Stuff extends React.Component{
     renderUsers = () => {
         return this.state.users.map(user => {
             return (
-                <UserCard name={user.name}/>
+                <UserCard name={user}/>
             );
         });
     }
