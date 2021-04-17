@@ -118,7 +118,7 @@ body{
 .app-content{
   max-height: calc(100% - 60px);
   height: calc(100% - 60px);
-  padding: 20px 20px 0 20px;
+  /*padding: 20px 20px 0 20px;*/
   overflow: auto;
   box-sizing: border-box;
 }
@@ -128,10 +128,16 @@ body{
   padding: 0 10px 10px 10px;
 }
 
+.user-list-view{
+  height: 100%;
+}
+
 .user-list{
   display: flex;
   flex-flow: wrap;
   align-items: flex-start;
+  max-height: calc(100% - 40px);
+  overflow: auto;
 }
 
 .user-card{
@@ -194,4 +200,42 @@ body{
   border-radius: 5px;
   cursor: pointer;
   user-select: none;
+}
+
+.search-box{
+  height: 40px;
+}
+
+.search-box-component{
+  position: relative;
+  height: 100%;
+}
+
+.search-text{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.search-box-btns{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 0 10px 10px;
+}
+
+.search-box-btns button{
+  background: transparent;
+  border-color: black;
+  color: black;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 20px;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 5px;
+  outline: none;
 }

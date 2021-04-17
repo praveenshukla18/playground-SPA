@@ -6,7 +6,7 @@
  * Re-export views (react component to be rendered in the context) from here, every time a view is added.
  */
 export {Home} from "../Views/Home";
-export {Stuff} from "../Views/Stuff";
+export {UserList} from "../Views/UserListView/UserList";
 //export {Contact} from "../Views/Contact";
 //export {ComponentsView} from "../Views/ComponentsView/ComponentsView";
 
@@ -18,7 +18,7 @@ const headerConfig = {
         path: '/home',
         text: 'Home'
     },
-    Stuff: {
+    UserList: {
         path: '/user',
         text: 'User'
     }/*,
