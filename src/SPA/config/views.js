@@ -7,6 +7,7 @@
  */
 export {Home} from "../Views/Home";
 export {UserList} from "../Views/UserListView/UserList";
+export {CovidPortal} from "../Views/CovidPortal/CovidPortal";
 //export {Contact} from "../Views/Contact";
 //export {ComponentsView} from "../Views/ComponentsView/ComponentsView";
 
@@ -21,7 +22,12 @@ const headerConfig = {
     UserList: {
         path: '/user',
         text: 'User'
-    }/*,
+    },
+    CovidPortal: {
+        path: '/covidportal',
+        text: 'Covid'
+    }
+    /*,
     Contact: {
         path: '/contact',
         text: 'Contact'

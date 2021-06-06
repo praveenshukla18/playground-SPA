@@ -92,7 +92,7 @@ html, body, #root, .main{
 }
 
 body{
-  background-color: #FFCC00;
+  /*background-color: #FFCC00;*/
 }
 
 .app-header{
@@ -238,4 +238,20 @@ body{
   user-select: none;
   margin-right: 5px;
   outline: none;
+}
+
+
+.case-summary{
+  height: 100%;
+}
+
+.case-summary-options{
+  height: 60px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.chart-container{
+  max-height: calc(100% - 60px);
+  overflow: auto;
 }
